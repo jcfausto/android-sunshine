@@ -14,7 +14,7 @@ public class MyActivity extends ActionBarActivity {
         setContentView(R.layout.activity_my);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new ForecastFragment.ForecastFragment())
+                    .add(R.id.container, new ForecastFragment())
                     .commit();
         }
     }
@@ -36,6 +36,7 @@ public class MyActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
