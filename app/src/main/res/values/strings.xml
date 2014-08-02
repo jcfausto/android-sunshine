@@ -11,4 +11,10 @@
     <string name="list_item_forecast_textview">Today - Sunny - 88 / 63</string>
     <string name="title_activity_detail">DetailActivity</string>
 
+    <!-- Settings strings -->
+    <string name="title_activity_settings" translatable="false">Settings</string>
+    <string name="pref_location_label" translatable="false">Location</string>
+    <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_default">88040001</string>
+
 </resources>
