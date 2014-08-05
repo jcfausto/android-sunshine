@@ -61,10 +61,12 @@ public class ForecastFragment extends Fragment {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
         if (id == R.id.action_refresh) {
             updateWeather();
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -148,6 +150,15 @@ public class ForecastFragment extends Fragment {
          * Prepare the weather high/lows for presentation.
          */
         private String formatHighLows(double high, double low) {
+            //Get the user's preferred unit system in order to convert and display the right value
+            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+            String unitType = preferences.getString(getString(R.string.pref_units_key), getString(R.string.pref_units_metric));
+
+            if (unitType.equals(getString(R.string.pref_units_imperial))){
+                high = (high * 1.8) + 32;
+                low = (low * 1.8) + 32;
+            }
+
             // For presentation, assume the user doesn't care about tenths of a degree.
             long roundedHigh = Math.round(high);
             long roundedLow = Math.round(low);

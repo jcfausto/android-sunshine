@@ -10,7 +10,6 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat" >
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -26,7 +25,7 @@
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.jcfausto.sunshine.MyActivity" />
+                android:value="com.jcfausto.sunshine.MainActivity" />
         </activity>
         <activity
             android:name=".SettingsActivity"
@@ -34,7 +33,7 @@
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.jcfausto.sunshine.MyActivity" />
+                android:value="com.jcfausto.sunshine.MainActivity" />
         </activity>
     </application>
 
