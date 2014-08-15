@@ -1,4 +1,4 @@
-package com.jcfausto.sunshine;
+package com.jcfausto.sunshine.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +8,8 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.jcfausto.sunshine.R;
 
 public class MainActivity extends ActionBarActivity {
 

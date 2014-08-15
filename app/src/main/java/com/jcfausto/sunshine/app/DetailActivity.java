@@ -1,4 +1,4 @@
-package com.jcfausto.sunshine;
+package com.jcfausto.sunshine.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v7.widget.ShareActionProvider;
 import android.widget.TextView;
+
+import com.jcfausto.sunshine.R;
 
 public class DetailActivity extends ActionBarActivity {
 
